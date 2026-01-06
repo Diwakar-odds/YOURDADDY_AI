@@ -42,10 +42,10 @@ const systems = [
 
 export default function AISystems() {
   return (
-    <section className="relative py-24 bg-gradient-to-b from-slate-900 to-slate-800">
+    <section className="relative py-24 bg-gradient-to-b from-[#0D0D0D] to-[#121212]">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#FF0040]/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#FF4D6A]/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,15 +58,15 @@ export default function AISystems() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Powered by{' '}
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-[#FF0040] to-[#FF4D6A] text-transparent bg-clip-text">
               27 Advanced AI Systems
             </span>
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-4">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-4">
             Multiple specialized AI models working together for unmatched intelligence
           </p>
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500/10 border border-cyan-500/20 rounded-full backdrop-blur-sm">
-            <span className="text-cyan-400 font-semibold">📚 Learns from 7,300+ articles yearly</span>
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF0040]/10 border border-[#FF0040]/20 rounded-full backdrop-blur-sm">
+            <span className="text-[#FF4D6A] font-semibold">📚 Learns from 7,300+ articles yearly</span>
           </div>
         </motion.div>
 
@@ -81,20 +81,20 @@ export default function AISystems() {
               whileHover={{ scale: 1.03 }}
               className="group relative"
             >
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-opacity" />
-              <div className="relative h-full bg-slate-800/90 backdrop-blur-sm rounded-2xl border border-slate-700 p-6 hover:border-cyan-500/50 transition-all">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#FF0040] to-[#FF4D6A] rounded-2xl opacity-0 group-hover:opacity-100 blur transition-opacity" />
+              <div className="relative h-full bg-[#121212]/90 backdrop-blur-sm rounded-2xl border border-gray-800 p-6 hover:border-[#FF0040]/50 transition-all">
                 <div className="flex items-start justify-between mb-4">
-                  <div className="p-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-xl border border-cyan-500/30">
-                    <system.icon className="w-6 h-6 text-cyan-400" />
+                  <div className="p-3 bg-gradient-to-r from-[#FF0040]/20 to-[#FF4D6A]/20 rounded-xl border border-[#FF0040]/30">
+                    <system.icon className="w-6 h-6 text-[#FF4D6A]" />
                   </div>
-                  <span className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-xs text-cyan-400 font-semibold">
+                  <span className="px-3 py-1 bg-[#FF0040]/10 border border-[#FF0040]/30 rounded-full text-xs text-[#FF4D6A] font-semibold">
                     {system.stat}
                   </span>
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">
                   {system.title}
                 </h3>
-                <p className="text-slate-400">
+                <p className="text-gray-400">
                   {system.description}
                 </p>
               </div>
@@ -109,13 +109,13 @@ export default function AISystems() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-12 text-center"
         >
-          <div className="inline-block bg-slate-800/80 backdrop-blur-sm rounded-2xl border border-slate-700 p-8">
-            <p className="text-slate-300 text-lg">
-              <span className="text-cyan-400 font-bold text-3xl">27</span> specialized AI systems
+          <div className="inline-block bg-[#121212]/80 backdrop-blur-sm rounded-2xl border border-gray-800 p-8">
+            <p className="text-gray-300 text-lg">
+              <span className="text-[#FF0040] font-bold text-3xl">27</span> specialized AI systems
               <span className="mx-2">•</span>
-              <span className="text-blue-400 font-bold text-3xl">Parallel</span> processing
+              <span className="text-[#FF4D6A] font-bold text-3xl">Parallel</span> processing
               <span className="mx-2">•</span>
-              <span className="text-green-400 font-bold text-3xl">Real-time</span> learning
+              <span className="text-[#FFA07A] font-bold text-3xl">Real-time</span> learning
             </p>
           </div>
         </motion.div>

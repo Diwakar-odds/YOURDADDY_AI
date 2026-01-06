@@ -47,7 +47,7 @@ export default function SecurityFAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative py-24 bg-slate-900">
+    <section className="relative py-24 bg-[#0D0D0D]">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -59,7 +59,7 @@ export default function SecurityFAQ() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Security & Privacy
           </h2>
-          <p className="text-xl text-slate-400">
+          <p className="text-xl text-gray-400">
             Your data security is our top priority
           </p>
         </motion.div>
@@ -74,15 +74,15 @@ export default function SecurityFAQ() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group relative"
             >
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition-opacity" />
-              <div className="relative h-full bg-slate-800/90 backdrop-blur-sm rounded-2xl border border-slate-700 p-6 hover:border-green-500/50 transition-all text-center">
-                <div className="inline-flex p-4 bg-green-500/10 rounded-xl border border-green-500/30 mb-4">
-                  <feature.icon className="w-8 h-8 text-green-400" />
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#FF0040] to-[#FF4D6A] rounded-2xl opacity-0 group-hover:opacity-100 blur transition-opacity" />
+              <div className="relative h-full bg-[#121212]/90 backdrop-blur-sm rounded-2xl border border-gray-800 p-6 hover:border-[#FF0040]/50 transition-all text-center">
+                <div className="inline-flex p-4 bg-[#FF0040]/10 rounded-xl border border-[#FF0040]/30 mb-4">
+                  <feature.icon className="w-8 h-8 text-[#FF4D6A]" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-slate-400">
+                <p className="text-gray-400">
                   {feature.description}
                 </p>
               </div>
@@ -100,7 +100,7 @@ export default function SecurityFAQ() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-slate-400 text-center mb-12">
+          <p className="text-xl text-gray-400 text-center mb-12">
             Everything you need to know
           </p>
         </motion.div>
@@ -113,7 +113,7 @@ export default function SecurityFAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-slate-800/80 backdrop-blur-sm rounded-xl border border-slate-700 overflow-hidden hover:border-cyan-500/50 transition-all"
+              className="bg-[#121212]/80 backdrop-blur-sm rounded-xl border border-gray-800 overflow-hidden hover:border-[#FF0040]/50 transition-all"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -123,9 +123,8 @@ export default function SecurityFAQ() {
                   {faq.question}
                 </span>
                 <ChevronDown
-                  className={`w-5 h-5 text-cyan-400 flex-shrink-0 transition-transform ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
+                  className={`w-5 h-5 text-[#FF4D6A] flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''
+                    }`}
                 />
               </button>
               {openIndex === index && (
@@ -136,7 +135,7 @@ export default function SecurityFAQ() {
                   transition={{ duration: 0.3 }}
                   className="px-6 pb-6"
                 >
-                  <p className="text-slate-400 leading-relaxed">
+                  <p className="text-gray-400 leading-relaxed">
                     {faq.answer}
                   </p>
                 </motion.div>

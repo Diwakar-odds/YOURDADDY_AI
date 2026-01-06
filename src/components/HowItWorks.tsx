@@ -26,8 +26,8 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="relative py-24 bg-slate-800">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNm0wLTEyYzMuMzE0IDAgNiAyLjY4NiA2IDZzLTIuNjg2IDYtNiA2LTYtMi42ODYtNi02IDIuNjg2LTYgNi02bTEyIDEyYzMuMzE0IDAgNiAyLjY4NiA2IDZzLTIuNjg2IDYtNiA2LTYtMi42ODYtNi02IDIuNjg2LTYgNi02IiBzdHJva2U9IiMwNmI2ZDQiIHN0cm9rZS13aWR0aD0iMC41IiBvcGFjaXR5PSIuMDUiLz48L2c+PC9zdmc+')] opacity-20" />
+    <section className="relative py-24 bg-[#121212]">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNm0wLTEyYzMuMzE0IDAgNiAyLjY4NiA2IDZzLTIuNjg2IDYtNiA2LTYtMi42ODYtNi02IDIuNjg2LTYgNi02bTEyIDEyYzMuMzE0IDAgNiAyLjY4NiA2IDZzLTIuNjg2IDYtNiA2LTYtMi42ODYtNi02IDIuNjg2LTYgNi02IiBzdHJva2U9IiNGRjAwNDAiIHN0cm9rZS13aWR0aD0iMC41IiBvcGFjaXR5PSIuMDUiLz48L2c+PC9zdmc+')] opacity-20" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -40,13 +40,13 @@ export default function HowItWorks() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             How It Works
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Four simple steps to unleash the power of AI
           </p>
         </motion.div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#FF0040] to-transparent" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
             {steps.map((step, index) => (
@@ -60,19 +60,19 @@ export default function HowItWorks() {
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="relative mb-6">
-                    <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-xl opacity-50" />
-                    <div className="relative w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#FF0040] to-[#FF4D6A] rounded-full blur-xl opacity-50" />
+                    <div className="relative w-20 h-20 bg-gradient-to-r from-[#FF0040] to-[#FF4D6A] rounded-full flex items-center justify-center">
                       <step.icon className="w-10 h-10 text-white" />
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-slate-900 border-2 border-cyan-500 rounded-full flex items-center justify-center">
-                      <span className="text-cyan-400 font-bold text-sm">{index + 1}</span>
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#0D0D0D] border-2 border-[#FF0040] rounded-full flex items-center justify-center">
+                      <span className="text-[#FF4D6A] font-bold text-sm">{index + 1}</span>
                     </div>
                   </div>
 
                   <h3 className="text-xl font-semibold text-white mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-slate-400 max-w-xs">
+                  <p className="text-gray-400 max-w-xs">
                     {step.description}
                   </p>
                 </div>
