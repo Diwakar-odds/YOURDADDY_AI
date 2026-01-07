@@ -4,8 +4,8 @@ import { Play, Sparkles } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1F2937] via-[#374151] to-[#1F2937]">
-        <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
+        <div className="absolute inset-0 opacity-[0.03]">
           <div className="absolute top-0 -left-4 w-96 h-96 bg-[#38BDF8] rounded-full mix-blend-multiply filter blur-3xl animate-blob" />
           <div className="absolute top-0 -right-4 w-96 h-96 bg-[#7DD3FC] rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000" />
           <div className="absolute -bottom-8 left-20 w-96 h-96 bg-[#38BDF8] rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000" />
@@ -73,7 +73,7 @@ export default function Hero() {
           className="mt-20 relative"
         >
           <div className="relative mx-auto max-w-4xl">
-            <div className="absolute -inset-4 bg-gradient-to-r from-[#38BDF8]/30 to-[#7DD3FC]/30 rounded-3xl blur-2xl" />
+            <div className="absolute -inset-4 bg-gradient-to-r from-[#38BDF8]/15 to-[#7DD3FC]/15 rounded-3xl blur-2xl" />
             <div className="relative bg-[#374151]/50 backdrop-blur-xl rounded-2xl border border-white/10 p-8 shadow-2xl">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-3 h-3 rounded-full bg-red-500" />

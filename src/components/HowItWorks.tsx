@@ -60,7 +60,7 @@ export default function HowItWorks() {
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="relative mb-6">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#38BDF8] to-[#7DD3FC] rounded-full blur-xl opacity-50" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#38BDF8] to-[#7DD3FC] rounded-full blur-xl opacity-25" />
                     <div className="relative w-20 h-20 bg-gradient-to-r from-[#38BDF8] to-[#7DD3FC] rounded-full flex items-center justify-center">
                       <step.icon className="w-10 h-10 text-white" />
                     </div>
