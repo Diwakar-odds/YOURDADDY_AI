@@ -6,56 +6,56 @@ const features = [
     icon: Brain,
     title: 'Real-Time AI',
     description: 'Powered by Google Gemini 2.0 and OpenAI GPT-4 for intelligent responses',
-    color: 'from-[#FF0040] to-[#FF4D6A]'
+    color: 'from-[#38BDF8] to-[#7DD3FC]'
   },
   {
     icon: Mic,
     title: 'Voice Control',
     description: 'Wake word "Hey Daddy" detection with natural language processing',
-    color: 'from-[#FF4D6A] to-[#FFA07A]'
+    color: 'from-[#7DD3FC] to-white'
   },
   {
     icon: Globe,
     title: 'Multilingual',
     description: 'Support for 10+ languages including English, Hindi, Spanish, and more',
-    color: 'from-[#FF0040] to-[#FF4D6A]'
+    color: 'from-[#38BDF8] to-[#7DD3FC]'
   },
   {
     icon: Eye,
     title: 'Vision AI',
     description: 'Advanced image analysis and OCR capabilities for visual understanding',
-    color: 'from-[#FF4D6A] to-[#FF0040]'
+    color: 'from-[#7DD3FC] to-[#38BDF8]'
   },
   {
     icon: Repeat,
     title: 'Smart Automation',
     description: 'Control over 500+ Windows applications with voice commands',
-    color: 'from-[#FF0040] to-[#FF4D6A]'
+    color: 'from-[#38BDF8] to-[#7DD3FC]'
   },
   {
     icon: Music,
     title: 'Media Integration',
     description: 'Seamless Spotify and YouTube Music integration for entertainment',
-    color: 'from-[#FF4D6A] to-[#FFA07A]'
+    color: 'from-[#7DD3FC] to-white'
   },
   {
     icon: Lightbulb,
     title: 'Adaptive Learning',
     description: '27 AI systems continuously learning from your interactions',
-    color: 'from-[#FFA07A] to-[#FF4D6A]'
+    color: 'from-white to-[#7DD3FC]'
   },
   {
     icon: Lock,
     title: 'Privacy-First',
     description: 'Offline mode with encrypted storage for maximum data security',
-    color: 'from-[#FF0040] to-[#FF4D6A]'
+    color: 'from-[#38BDF8] to-[#7DD3FC]'
   }
 ];
 
 export default function Features() {
   return (
-    <section className="relative py-24 bg-[#0D0D0D]">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#121212] to-[#0D0D0D]" />
+    <section className="relative py-24 bg-slate-900">
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-800 to-slate-900" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -84,10 +84,10 @@ export default function Features() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="group relative"
             >
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#FF0040] to-[#FF4D6A] rounded-2xl opacity-0 group-hover:opacity-100 blur transition-opacity" />
-              <div className="relative h-full bg-[#121212]/80 backdrop-blur-sm rounded-2xl border border-gray-800 p-6 hover:border-[#FF0040]/50 transition-all">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#38BDF8] to-[#7DD3FC] rounded-2xl opacity-0 group-hover:opacity-100 blur transition-opacity" />
+              <div className="relative h-full bg-[#374151]/80 backdrop-blur-sm rounded-2xl border border-gray-700 p-6 hover:border-[#38BDF8]/50 transition-all">
                 <div className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${feature.color} mb-4`}>
-                  <feature.icon className="w-6 h-6 text-white" />
+                  <feature.icon className="w-6 h-6 text-[#1F2937]" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">
                   {feature.title}

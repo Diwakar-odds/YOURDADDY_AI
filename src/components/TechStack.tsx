@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
 
 const technologies = [
-  { name: 'Google Gemini 2.0', gradient: 'from-[#FF0040] to-[#FF4D6A]' },
-  { name: 'OpenAI GPT-4', gradient: 'from-[#FF4D6A] to-[#FFA07A]' },
-  { name: 'Whisper AI', gradient: 'from-[#FF0040] to-[#FF4D6A]' },
-  { name: 'Python', gradient: 'from-[#FFA07A] to-[#FF4D6A]' },
-  { name: 'React + TypeScript', gradient: 'from-[#FF4D6A] to-[#FF0040]' },
-  { name: 'WebSocket', gradient: 'from-[#FF0040] to-[#FF4D6A]' }
+  { name: 'Google Gemini 2.0', gradient: 'from-[#38BDF8] to-[#7DD3FC]' },
+  { name: 'OpenAI GPT-4', gradient: 'from-[#7DD3FC] to-white' },
+  { name: 'Whisper AI', gradient: 'from-[#38BDF8] to-[#7DD3FC]' },
+  { name: 'Python', gradient: 'from-white to-[#7DD3FC]' },
+  { name: 'React + TypeScript', gradient: 'from-[#7DD3FC] to-[#38BDF8]' },
+  { name: 'WebSocket', gradient: 'from-[#38BDF8] to-[#7DD3FC]' }
 ];
 
 export default function TechStack() {
   return (
-    <section className="relative py-16 bg-[#121212]">
+    <section className="relative py-16 bg-slate-800">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ export default function TechStack() {
               className="group relative"
             >
               <div className={`absolute -inset-0.5 bg-gradient-to-r ${tech.gradient} rounded-full opacity-75 group-hover:opacity-100 blur transition-opacity`} />
-              <div className="relative px-6 py-3 bg-[#0D0D0D] rounded-full border border-gray-800 group-hover:border-transparent transition-all">
+              <div className="relative px-6 py-3 bg-[#1F2937] rounded-full border border-gray-700 group-hover:border-transparent transition-all">
                 <span className={`font-semibold bg-gradient-to-r ${tech.gradient} text-transparent bg-clip-text`}>
                   {tech.name}
                 </span>

@@ -7,34 +7,34 @@ const useCases = [
     title: 'Productivity',
     description: 'Schedule meetings, manage your calendar, send emails, and organize tasks effortlessly',
     examples: ['Schedule meeting', 'Send email to team', 'Add reminder', 'Create document'],
-    color: 'from-[#FF0040] to-[#FF4D6A]'
+    color: 'from-[#38BDF8] to-[#7DD3FC]'
   },
   {
     icon: Headphones,
     title: 'Entertainment',
     description: 'Control Spotify playlists, play YouTube videos, and manage all your media',
     examples: ['Play my workout playlist', 'Next song', 'Play on YouTube', 'Volume up'],
-    color: 'from-[#FF4D6A] to-[#FFA07A]'
+    color: 'from-[#7DD3FC] to-white'
   },
   {
     icon: Info,
     title: 'Information',
     description: 'Get weather updates, latest news, web searches, and instant answers',
     examples: ['Weather forecast', 'Latest tech news', 'Search for recipes', 'Define quantum'],
-    color: 'from-[#FF0040] to-[#FF4D6A]'
+    color: 'from-[#38BDF8] to-[#7DD3FC]'
   },
   {
     icon: Cog,
     title: 'Automation',
     description: 'Launch applications, organize files, control system settings, and automate workflows',
     examples: ['Open Chrome', 'Organize downloads', 'Take screenshot', 'Lock screen'],
-    color: 'from-[#FFA07A] to-[#FF4D6A]'
+    color: 'from-white to-[#7DD3FC]'
   }
 ];
 
 export default function UseCases() {
   return (
-    <section className="relative py-24 bg-[#0D0D0D]">
+    <section className="relative py-24 bg-slate-900">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -63,9 +63,9 @@ export default function UseCases() {
               className="group relative"
             >
               <div className={`absolute -inset-0.5 bg-gradient-to-r ${useCase.color} rounded-2xl opacity-0 group-hover:opacity-100 blur transition-opacity`} />
-              <div className="relative h-full bg-[#121212]/90 backdrop-blur-sm rounded-2xl border border-gray-800 p-8 hover:border-[#FF0040]/50 transition-all">
+              <div className="relative h-full bg-[#374151]/90 backdrop-blur-sm rounded-2xl border border-gray-700 p-8 hover:border-[#38BDF8]/50 transition-all">
                 <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${useCase.color} mb-4`}>
-                  <useCase.icon className="w-8 h-8 text-white" />
+                  <useCase.icon className="w-8 h-8 text-[#1F2937]" />
                 </div>
 
                 <h3 className="text-2xl font-semibold text-white mb-3">
@@ -84,7 +84,7 @@ export default function UseCases() {
                     {useCase.examples.map((example, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1.5 bg-[#1A1A1A] border border-gray-700 rounded-lg text-sm text-gray-300 hover:bg-[#FF0040]/10 hover:border-[#FF0040]/30 transition-colors"
+                        className="px-3 py-1.5 bg-[#1F2937] border border-gray-600 rounded-lg text-sm text-gray-300 hover:bg-[#38BDF8]/10 hover:border-[#38BDF8]/30 transition-colors"
                       >
                         "{example}"
                       </span>
