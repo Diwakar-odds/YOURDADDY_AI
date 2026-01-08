@@ -3,7 +3,7 @@ import { Download, CheckCircle } from 'lucide-react';
 
 export default function CTA() {
   return (
-    <section className="relative py-24 bg-gradient-to-b from-slate-900 to-slate-800 overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-br from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a] overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#38BDF8]/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#7DD3FC]/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />

@@ -47,13 +47,13 @@ export default function Header() {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => setIsModalOpen(true)}
-                            className="group relative px-6 py-3 bg-gradient-to-r from-[#38BDF8] to-[#7DD3FC] text-white font-semibold rounded-lg overflow-hidden transition-all hover:shadow-lg hover:shadow-[#38BDF8]/50"
+                            className="group relative px-6 py-3 bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a] text-white font-semibold rounded-lg overflow-hidden transition-all hover:shadow-lg hover:shadow-black/50 border border-white/10"
                         >
                             <span className="relative z-10 flex items-center gap-2">
                                 <Mail className="w-4 h-4" />
                                 Join Waitlist
                             </span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#7DD3FC] to-[#38BDF8] opacity-0 group-hover:opacity-100 transition-opacity" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#2d2d2d] via-[#404040] to-[#2d2d2d] opacity-0 group-hover:opacity-100 transition-opacity" />
                         </motion.button>
                     </div>
                 </div>

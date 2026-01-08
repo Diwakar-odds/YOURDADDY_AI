@@ -34,7 +34,7 @@ const useCases = [
 
 export default function UseCases() {
   return (
-    <section className="relative py-24 bg-slate-900">
+    <section className="relative py-24 bg-gradient-to-br from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -4,7 +4,7 @@ import { Play, Sparkles } from 'lucide-react';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]">
         <div className="absolute inset-0 opacity-[0.03]">
           <div className="absolute top-0 -left-4 w-96 h-96 bg-[#38BDF8] rounded-full mix-blend-multiply filter blur-3xl animate-blob" />
           <div className="absolute top-0 -right-4 w-96 h-96 bg-[#7DD3FC] rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000" />
@@ -55,9 +55,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <button className="group relative px-8 py-4 bg-gradient-to-r from-[#38BDF8] to-[#7DD3FC] text-white font-semibold rounded-lg overflow-hidden transition-all hover:scale-105 hover:shadow-lg hover:shadow-[#38BDF8]/50">
+          <button className="group relative px-8 py-4 bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a] text-white font-semibold rounded-lg overflow-hidden transition-all hover:scale-105 hover:shadow-lg hover:shadow-black/50 border border-white/10">
             <span className="relative z-10">Get Started Free</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#7DD3FC] to-[#38BDF8] opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#2d2d2d] via-[#404040] to-[#2d2d2d] opacity-0 group-hover:opacity-100 transition-opacity" />
           </button>
 
           <button className="flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/20 hover:bg-white/20 transition-all">
@@ -73,8 +73,8 @@ export default function Hero() {
           className="mt-20 relative"
         >
           <div className="relative mx-auto max-w-4xl">
-            <div className="absolute -inset-4 bg-gradient-to-r from-[#38BDF8]/15 to-[#7DD3FC]/15 rounded-3xl blur-2xl" />
-            <div className="relative bg-[#374151]/50 backdrop-blur-xl rounded-2xl border border-white/10 p-8 shadow-2xl">
+            <div className="absolute -inset-4 bg-gradient-to-r from-[#1a1a1a]/30 to-[#2d2d2d]/30 rounded-3xl blur-2xl" />
+            <div className="relative bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d] backdrop-blur-xl rounded-2xl border border-white/10 p-8 shadow-2xl">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-3 h-3 rounded-full bg-red-500" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
