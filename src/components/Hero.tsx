@@ -3,7 +3,7 @@ import { Play, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
         <div className="absolute inset-0 opacity-[0.03]">
           <div className="absolute top-0 -left-4 w-96 h-96 bg-[#38BDF8] rounded-full mix-blend-multiply filter blur-3xl animate-blob" />
