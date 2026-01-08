@@ -9,10 +9,12 @@ import Stats from './components/Stats';
 import SecurityFAQ from './components/SecurityFAQ';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import Snowfall from './components/Snowfall';
 
 function App() {
   return (
     <div className="min-h-screen bg-slate-900">
+      <Snowfall />
       <Header />
       <Hero />
       <Features />
